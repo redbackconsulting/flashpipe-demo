@@ -27,6 +27,6 @@ jobs:
           oauth-host: equaliseit.authentication.eu20.hana.ondemand.com
           oauth-clientid: ${{ secrets.DEV_CLIENT_ID }}
           oauth-clientsecret: ${{ secrets.DEV_CLIENT_SECRET }}
-          package-id: FlashPipeDemo
+          package-id: SnowIntegrations
           target: remote
-          dir-artifacts-relative: FlashPipe Demo
+          dir-artifacts-relative: DoH_Snow_Package
