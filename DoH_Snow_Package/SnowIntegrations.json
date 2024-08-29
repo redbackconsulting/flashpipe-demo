@@ -1,0 +1,10 @@
+{
+  "d": {
+    "Id": "SnowIntegrations",
+    "Name": "Snow Integrations",
+    "Description": "\u003cp\u003e\u003c/p\u003e",
+    "ShortText": "Snow Integrations\n1. getTable\n2. postMasterData\n3.",
+    "Version": "1.0.0",
+    "Mode": "EDIT_ALLOWED"
+  }
+}
