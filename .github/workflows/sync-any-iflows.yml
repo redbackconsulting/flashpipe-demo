@@ -1,4 +1,4 @@
-name: Sync any artifact from tenant
+name: Sync any iFlows from tenant
 
 on:
   workflow_dispatch:
