@@ -14,8 +14,8 @@ jobs:
       - name: 'Sync package to remote'
         uses: engswee/flashpipe-action/update/package@v1
         with:
-          tmn-host: equaliseit.it-cpi023.cfapps.eu20-001.hana.ondemand.com
-          oauth-host: equaliseit.authentication.eu20.hana.ondemand.com
+          tmn-host: b59f307ctrial.it-cpitrial05.cfapps.us10-001.hana.ondemand.com
+          oauth-host: b59f307ctrial.authentication.us10.hana.ondemand.com/oauth/token
           oauth-clientid: ${{ secrets.DEV_CLIENT_ID }}
           oauth-clientsecret: ${{ secrets.DEV_CLIENT_SECRET }}
           package-file-relative: FlashPipe Demo/FlashPipeDemo.json
@@ -23,8 +23,8 @@ jobs:
       - name: 'Sync FlashPipeDemo artifacts'
         uses: engswee/flashpipe-action/sync@v1
         with:
-          tmn-host: equaliseit.it-cpi023.cfapps.eu20-001.hana.ondemand.com
-          oauth-host: equaliseit.authentication.eu20.hana.ondemand.com
+          tmn-host: b59f307ctrial.it-cpitrial05.cfapps.us10-001.hana.ondemand.com
+          oauth-host: b59f307ctrial.authentication.us10.hana.ondemand.com/oauth/token
           oauth-clientid: ${{ secrets.DEV_CLIENT_ID }}
           oauth-clientsecret: ${{ secrets.DEV_CLIENT_SECRET }}
           package-id: SnowIntegrations
