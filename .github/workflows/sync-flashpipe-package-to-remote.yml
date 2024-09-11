@@ -18,7 +18,7 @@ jobs:
           oauth-host: b59f307ctrial.authentication.us10.hana.ondemand.com
           oauth-clientid: ${{ secrets.DEV_CLIENT_ID }}
           oauth-clientsecret: ${{ secrets.DEV_CLIENT_SECRET }}
-          package-file-relative: FlashPipe Demo/FlashPipeDemo.json
+          package-file-relative: DoH_Snow_Package/SnowIntegrations.json
 
       - name: 'Sync FlashPipeDemo artifacts'
         uses: engswee/flashpipe-action/sync@v1
@@ -28,5 +28,5 @@ jobs:
           oauth-clientid: ${{ secrets.DEV_CLIENT_ID }}
           oauth-clientsecret: ${{ secrets.DEV_CLIENT_SECRET }}
           package-id: SnowIntegrations
-          target: remote
+          target: tenant
           dir-artifacts-relative: DoH_Snow_Package
