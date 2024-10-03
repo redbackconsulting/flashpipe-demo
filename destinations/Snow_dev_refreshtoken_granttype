@@ -1,0 +1,12 @@
+#clientSecret=<< Existing password/certificate removed on export >>
+#
+#Thu Oct 03 13:21:06 UTC 2024
+tokenServiceURLType=Dedicated
+Type=HTTP
+Description=Snow Dev refreshtoken grant type
+clientId=15e1481710b20e10959cc9f884e4ca96
+Authentication=OAuth2RefreshToken
+tokenServiceURL=https\://hacdev01.servicenowcloud.com.au/oauth_token.do
+ProxyType=Internet
+URL=https\://hacdev01.servicenowcloud.com.au/
+Name=Snow_dev_refreshtoken_granttype

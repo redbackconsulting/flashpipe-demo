@@ -1,0 +1,14 @@
+#clientSecret=<< Existing password/certificate removed on export >>
+#Password=<< Existing password/certificate removed on export >>
+#
+#Thu Oct 03 13:20:59 UTC 2024
+tokenServiceURLType=Dedicated
+clientId=15e1481710b20e10959cc9f884e4ca96
+Description=Snow Dev password grant type
+User=sap.integration
+tokenServiceURL=https\://hacdev01.servicenowcloud.com.au/oauth_token.do
+URL=https\://hacdev01.servicenowcloud.com.au/
+Name=Snow_dev_pw_granttype
+Type=HTTP
+Authentication=OAuth2Password
+ProxyType=Internet
