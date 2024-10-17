@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><parameters><parameter>
     <key/>
-    <name>exSnowApiCompanyCodeUri</name>
-    <type>xsd:string</type>
-    <isRequired>false</isRequired>
-    <constraint/>
-    <description/>
-    <additionalMetadata/>
-  </parameter><parameter>
-    <key/>
-    <name>exSnowReplicationNrRange</name>
-    <type>xsd:string</type>
-    <isRequired>false</isRequired>
-    <constraint/>
-    <description/>
-    <additionalMetadata/>
-  </parameter><parameter>
-    <key/>
     <name>exSnowApiBaseUrl</name>
     <type>xsd:string</type>
     <isRequired>false</isRequired>
@@ -24,7 +8,15 @@
     <additionalMetadata/>
   </parameter><parameter>
     <key/>
-    <name>exSnowApiOrgChartUri</name>
+    <name>exDataStore</name>
+    <type>xsd:string</type>
+    <isRequired>false</isRequired>
+    <constraint/>
+    <description/>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>exSnowApiServiceUri</name>
     <type>xsd:string</type>
     <isRequired>false</isRequired>
     <constraint/>

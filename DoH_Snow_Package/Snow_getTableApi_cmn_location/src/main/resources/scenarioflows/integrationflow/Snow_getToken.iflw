@@ -305,7 +305,7 @@
         </bpmn2:endEvent>
         <bpmn2:startEvent id="StartEvent_5" name="Start Timer 1">
             <bpmn2:outgoing>SequenceFlow_6</bpmn2:outgoing>
-            <bpmn2:timerEventDefinition id="TimerEventDefinition_97313">
+            <bpmn2:timerEventDefinition id="TimerEventDefinition_96995">
                 <bpmn2:extensionElements>
                     <ifl:property>
                         <key>scheduleKey</key>
@@ -338,6 +338,9 @@
             <bpmndi:BPMNShape bpmnElement="ServiceTask_8" id="BPMNShape_ServiceTask_8">
                 <dc:Bounds height="60.0" width="100.0" x="384.0" y="138.0"/>
             </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="CallActivity_13" id="BPMNShape_CallActivity_13">
+                <dc:Bounds height="60.0" width="100.0" x="534.0" y="138.0"/>
+            </bpmndi:BPMNShape>
             <bpmndi:BPMNShape bpmnElement="StartEvent_5" id="BPMNShape_StartEvent_5">
                 <dc:Bounds height="32.0" width="32.0" x="264.0" y="148.0"/>
             </bpmndi:BPMNShape>
@@ -347,12 +350,13 @@
             <bpmndi:BPMNShape bpmnElement="Participant_Process_1" id="BPMNShape_Participant_Process_1">
                 <dc:Bounds height="220.0" width="663.0" x="226.0" y="60.0"/>
             </bpmndi:BPMNShape>
-            <bpmndi:BPMNShape bpmnElement="CallActivity_13" id="BPMNShape_CallActivity_13">
-                <dc:Bounds height="60.0" width="100.0" x="534.0" y="138.0"/>
-            </bpmndi:BPMNShape>
             <bpmndi:BPMNEdge bpmnElement="SequenceFlow_9" id="BPMNEdge_SequenceFlow_9" sourceElement="BPMNShape_ServiceTask_8" targetElement="BPMNShape_CallActivity_13">
                 <di:waypoint x="434.0" xsi:type="dc:Point" y="168.0"/>
                 <di:waypoint x="584.0" xsi:type="dc:Point" y="168.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_14" id="BPMNEdge_SequenceFlow_14" sourceElement="BPMNShape_CallActivity_13" targetElement="BPMNShape_EndEvent_2">
+                <di:waypoint x="584.0" xsi:type="dc:Point" y="166.0"/>
+                <di:waypoint x="789.0" xsi:type="dc:Point" y="166.0"/>
             </bpmndi:BPMNEdge>
             <bpmndi:BPMNEdge bpmnElement="SequenceFlow_6" id="BPMNEdge_SequenceFlow_6" sourceElement="BPMNShape_StartEvent_5" targetElement="BPMNShape_ServiceTask_8">
                 <di:waypoint x="280.0" xsi:type="dc:Point" y="166.0"/>
@@ -361,10 +365,6 @@
             <bpmndi:BPMNEdge bpmnElement="MessageFlow_12" id="BPMNEdge_MessageFlow_12" sourceElement="BPMNShape_ServiceTask_8" targetElement="BPMNShape_Participant_2">
                 <di:waypoint x="434.0" xsi:type="dc:Point" y="168.0"/>
                 <di:waypoint x="498.0" xsi:type="dc:Point" y="417.0"/>
-            </bpmndi:BPMNEdge>
-            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_14" id="BPMNEdge_SequenceFlow_14" sourceElement="BPMNShape_CallActivity_13" targetElement="BPMNShape_EndEvent_2">
-                <di:waypoint x="584.0" xsi:type="dc:Point" y="166.0"/>
-                <di:waypoint x="789.0" xsi:type="dc:Point" y="166.0"/>
             </bpmndi:BPMNEdge>
         </bpmndi:BPMNPlane>
     </bpmndi:BPMNDiagram>

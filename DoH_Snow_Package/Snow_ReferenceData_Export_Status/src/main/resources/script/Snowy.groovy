@@ -1,5 +1,8 @@
 import com.sap.gateway.ip.core.customdev.util.Message;
 import java.util.HashMap;
+import groovy.util.XmlSlurper;
+import java.util.regex.*;
+import groovy.xml.*;
 
 def Message processData(Message message)
 {   
@@ -10,6 +13,18 @@ def Message processData(Message message)
         messageLog.setStringProperty("log1","Printing Payload As Attachment")
         messageLog.addAttachmentAsString("log1",body,"text/plain");
     }
+    return message;
+}
+
+def Message logHeaders(Message message) {
+	def headers = message.getHeaders()
+	def messageLog = messageLogFactory.getMessageLog(message)
+	for (header in headers) {
+	   messageLog.setStringProperty("header." + header.getKey().toString(), header.getValue().toString())
+	   //strHead = header.getValue().toString();
+	   //strHead.replaceAll(/[^\x20-\x7E]+/g, '');
+	  //messageLog.setStringProperty("headerX." + header.getKey().toString(), strHead);
+	}
     return message;
 }
 
@@ -24,6 +39,32 @@ def Message setTargetUri(Message message)
         message.setProperty("SnowApiServiceUri", message.getProperty("SnowApiCompanyCodeUri"));            
         break;
     }
+    return message;
+}
+
+def Message setImportSetTargetUri(Message msg)
+{   
+//    def body = msg.getBody(java.lang.String);
+//    def xml = new XmlParser().parseText(body);
+    def body = msg.getBody(java.io.Reader);
+    def xml = new XmlSlurper().parse(body);
+    def entryId = xml.'**'.findAll { node -> node.name() == 'message' }*.@id   
+//    println entryId[0];
+    def import_set_id = xml.'**'.findAll { node -> node.name() == 'import_set_id' }*.text();
+//    println import_set_id[0];
+    def multi_import_set_id = xml.'**'.findAll { node -> node.name() == 'multi_import_set_id' }*.text();
+//    println multi_import_set_id[0];
+    //println "EntyrID" entryId;
+    def strEntryId = entryId[0] as String
+    List<String> entry = Arrays.asList(strEntryId.split("_")); 
+    msg.setProperty("EntryId", entryId[0]);
+    msg.setProperty("sEntity", entry[0]);  
+    msg.setProperty("ImportSetId", import_set_id[0]);
+    msg.setProperty("MultipImportSetId", multi_import_set_id[0]);
+    
+    //println XmlUtil.serialize(xml);
+
+        return msg;
     return message;
 }
 

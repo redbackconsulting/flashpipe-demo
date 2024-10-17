@@ -1,8 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Snow_ReferenceData_SAPToSnow
-Bundle-SymbolicName: Snow_ReferenceData_SAPToSnow
-Bundle-Version: 1.0.14
+Bundle-Name: getManagedAccessTokenForRefreshToken
+Bundle-SymbolicName: getManagedAccessTokenForRefreshToken; singleton:=tr
+ ue
+Bundle-Version: 1.0.1
 SAP-BundleType: IntegrationFlow
 SAP-NodeType: IFLMAP
 SAP-RuntimeProfile: iflmap
@@ -32,6 +33,8 @@ Import-Package: com.sap.esb.application.services.cxf.interceptor,com.sap
  om.sap.esb.camel.jdbc.idempotency.reorg,javax.sql,org.apache.camel.proc
  essor.idempotent.jdbc,org.osgi.service.blueprint;version="[1.0.0,2.0.0)
  "
-Origin-Bundle-Name: Snow_ReferenceData_SAPToSnow
-Origin-Bundle-SymbolicName: Snow_ReferenceData_SAPToSnow
+Origin-Bundle-Name: getManagedAccessTokenForRefreshToken
+Origin-Bundle-SymbolicName: getManagedAccessTokenForRefreshToken
+Require-Capability: scriptcollection.SnowyScripts;resolution:=optional;b
+ undleType:String="ScriptCollection";source:String="reference"
 

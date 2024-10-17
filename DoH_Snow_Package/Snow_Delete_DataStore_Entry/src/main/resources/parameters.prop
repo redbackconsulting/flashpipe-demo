@@ -1,0 +1,8 @@
+#Thu Oct 17 23:48:32 UTC 2024
+exMaxRetryInterval=60
+exSnowApiBaseUrl=https\://hacdev01.servicenowcloud.com.au/api/now/table
+exLocalTimeout=10
+exRetryInterval=1
+exPollInterval=60
+exDataStoreName=Snow_Replication_Responses
+exSnowApiServiceUri=sys_import_set

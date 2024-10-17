@@ -1,1 +1,5 @@
-#Thu Aug 29 06:54:47 UTC 2024
+#Thu Oct 17 23:48:31 UTC 2024
+exSnowApiCompanyCodeUri=sn_fin_sap_company_code
+exSnowReplicationNrRange=
+exSnowApiBaseUrl=https\://hacdev01.servicenowcloud.com.au/api/now
+exSnowApiOrgChartUri=u_sap_department

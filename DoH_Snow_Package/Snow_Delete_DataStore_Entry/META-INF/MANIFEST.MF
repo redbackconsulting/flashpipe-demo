@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Snow_ReferenceData_SAPToSnow
-Bundle-SymbolicName: Snow_ReferenceData_SAPToSnow
-Bundle-Version: 1.0.14
+Bundle-Name: Snow_Delete_DataStore_Entry
+Bundle-SymbolicName: Snow_Delete_DataStore_Entry; singleton:=true
+Bundle-Version: 1.0.5
 SAP-BundleType: IntegrationFlow
 SAP-NodeType: IFLMAP
 SAP-RuntimeProfile: iflmap
@@ -32,6 +32,6 @@ Import-Package: com.sap.esb.application.services.cxf.interceptor,com.sap
  om.sap.esb.camel.jdbc.idempotency.reorg,javax.sql,org.apache.camel.proc
  essor.idempotent.jdbc,org.osgi.service.blueprint;version="[1.0.0,2.0.0)
  "
-Origin-Bundle-Name: Snow_ReferenceData_SAPToSnow
-Origin-Bundle-SymbolicName: Snow_ReferenceData_SAPToSnow
+Origin-Bundle-Name: Snow_Delete_DataStore_Entry
+Origin-Bundle-SymbolicName: Snow_Delete_DataStore_Entry
 

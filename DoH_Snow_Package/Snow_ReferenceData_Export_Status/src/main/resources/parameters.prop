@@ -1,0 +1,4 @@
+#Thu Oct 17 23:48:31 UTC 2024
+exSnowApiBaseUrl=https\://hacdev01.servicenowcloud.com.au/api/now/table
+exDataStore=Snow_Replication_Responses
+exSnowApiServiceUri=sys_import_set
