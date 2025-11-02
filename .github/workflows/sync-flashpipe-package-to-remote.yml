@@ -23,8 +23,8 @@ jobs:
       - name: 'Sync FlashPipeDemo artifacts'
         uses: engswee/flashpipe-action/sync@v1
         with:
-          tmn-host: b59f307ctrial.it-cpitrial05.cfapps.us10-001.hana.ondemand.com
-          oauth-host: b59f307ctrial.authentication.us10.hana.ondemand.com
+          tmn-host: ${{ secrets.TMN_HOST }}
+          oauth-host: ${{ secrets.OAUTH_HOST }}
           oauth-clientid: ${{ secrets.DEV_CLIENT_ID }}
           oauth-clientsecret: ${{ secrets.DEV_CLIENT_SECRET }}
           package-id: SnowIntegrations
